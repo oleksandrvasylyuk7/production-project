@@ -1,0 +1,6 @@
+services:
+  production-project:
+    build: ./
+    image: production-project:latest
+    volumes:
+      - ./:/production-project
