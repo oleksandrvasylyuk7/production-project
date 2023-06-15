@@ -2,5 +2,7 @@ services:
   production-project:
     build: ./
     image: production-project:latest
+    ports:
+      - 3000:3000
     volumes:
       - ./:/production-project
