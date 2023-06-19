@@ -1,5 +1,6 @@
 {
   "about_site": "about_site",
   "language": "language",
-  "main_page": "main_page"
+  "main_page": "main_page",
+  "page_not_found": "page_not_found"
 }
