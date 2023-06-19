@@ -6,7 +6,8 @@ module.exports = {
   extends: [
     'standard-with-typescript',
     'plugin:react/recommended',
-    'plugin:react/jsx-runtime'
+    'plugin:react/jsx-runtime',
+    'plugin:i18next/recommended'
   ],
   overrides: [
     {
@@ -28,11 +29,13 @@ module.exports = {
     project: './tsconfig.json'
   },
   plugins: [
-    'react'
+    'react',
+    'i18next'
   ],
   rules: {
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
-    '@typescript-eslint/strict-boolean-expressions': 'off'
+    '@typescript-eslint/strict-boolean-expressions': 'off',
+    'i18next/no-literal-string': ['error', { markupOnly: true }]
   },
   settings: {
     react: {
